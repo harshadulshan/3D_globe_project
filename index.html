@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Earth Globe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="globe-canvas"></canvas>
+
+      <div id="info-panel">
+        <div id="location-info">
+          <h3>My Location</h3>
+          <p id="coords">Fetching location...</p>
+          <p id="weather">Fetching weather...</p>
+        </div>
+      </div>
+
+      <div id="iss-info">
+        <h3>🛸 ISS Position</h3>
+        <p id="iss-coords">Fetching ISS...</p>
+        <p id="iss-alt"></p>
+        <p id="iss-vel"></p>
+      </div>
+
+      <div id="time-panel">
+        <p id="utc-time"></p>
+      </div>
+
+      <div id="gesture-hint">
+        ✋ Drag to rotate | 🖱️ Scroll to zoom
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

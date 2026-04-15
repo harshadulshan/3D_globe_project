@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#globe-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#info-panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 20, 50, 0.75);
+  border: 1px solid rgba(0, 150, 255, 0.4);
+  border-radius: 12px;
+  padding: 15px 20px;
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+}
+
+#info-panel h3 {
+  color: #00aaff;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#info-panel p {
+  font-size: 13px;
+  color: #ccddff;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+#iss-info {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(50, 20, 0, 0.75);
+  border: 1px solid rgba(255, 100, 0, 0.4);
+  border-radius: 12px;
+  padding: 15px 20px;
+  min-width: 220px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+#iss-info h3 {
+  color: #ff6600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#iss-info p {
+  font-size: 13px;
+  color: #ffddcc;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+#time-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 20, 50, 0.75);
+  border: 1px solid rgba(0, 150, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px 18px;
+  backdrop-filter: blur(10px);
+}
+
+#utc-time {
+  font-size: 14px;
+  color: #00aaff;
+  letter-spacing: 1px;
+}
+
+#gesture-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 20, 50, 0.75);
+  border: 1px solid rgba(0, 150, 255, 0.4);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 13px;
+  color: #ccddff;
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+}

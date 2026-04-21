@@ -10,6 +10,9 @@
     <div id="app">
       <canvas id="globe-canvas"></canvas>
 
+      <video id="webcam" autoplay playsinline muted></video>
+      <canvas id="hand-canvas"></canvas>
+
       <div id="info-panel">
         <div id="location-info">
           <h3>My Location</h3>
@@ -29,8 +32,17 @@
         <p id="utc-time"></p>
       </div>
 
+      <div id="click-popup">
+        <p id="popup-country"></p>
+        <p id="popup-coords"></p>
+      </div>
+
+      <div id="gesture-status">
+        <p id="gesture-label">🤚 Gesture: None</p>
+      </div>
+
       <div id="gesture-hint">
-        ✋ Drag to rotate | 🖱️ Scroll to zoom
+        ✋ Drag to rotate | 🖱️ Scroll to zoom | 🖱️ Click to identify location | 🤚 Hand gesture to rotate
       </div>
     </div>
     <script type="module" src="main.js"></script>
